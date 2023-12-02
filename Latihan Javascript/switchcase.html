@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Switch Case di JavaScript</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script type="text/javascript">
+      var hari = "";
+      switch (new Date().getDay()) {
+        case 0:
+          hari = "Minggu";
+          break;
+        case 1:
+          hari = "Senin";
+          break;
+        case 2:
+          hari = "Selasa";
+          break;
+        case 3:
+          hari = "Rabu";
+          break;
+        case 4:
+          hari = "Kamis";
+          break;
+        case 5:
+          hari = "Jumat";
+          break;
+        case 6:
+          hari = "Sabtu";
+      }
+      document.getElementById("demo").innerHTML =
+        "Hari ini adalah hari : " + hari;
+    </script>
+  </body>
+</html>
